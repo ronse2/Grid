@@ -1,0 +1,78 @@
+
+.grid-container{
+    
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "menu contenidoprincipal "
+        "footer footer";
+        gap: 5px;
+        
+}
+
+
+
+
+header{
+    grid-area: header;
+    background-color: blue;
+    
+}
+
+menu{
+    grid-area: menu;
+    width: auto;
+}
+
+main{
+    grid-area: contenidoprincipal;
+    background-color: white;
+    width: 90%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: white;
+    
+}
+
+.arriba{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 2px gray;
+    justify-content: center;
+}
+
+.navbar-text{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.central{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 55px;
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.abajo {
+    display: flex;
+    justify-content: center;
+    border: solid 2px black;
+}
